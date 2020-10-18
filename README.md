@@ -1,3 +1,7 @@
+<p align="center">
+  <img alt="happy" title="happy" src="./assets/banner.png" />
+</p>
+
 <h1 align="center">
   Leve felicidade para o mundo
 </h1>
@@ -80,7 +84,6 @@ $ cd ../web && yarn
 $ yarn start
 ```
 
-
 </td>
 <td>
 
@@ -102,12 +105,5 @@ $ cd ../web && npm install
 $ npm start
 ```
 
-
 </td>
 </table>
-
-<br />
-
-## 📝 License
-
-Esse projeto está sob a licença MIT. Consulte [LICENSE](https://github.com/Bonizario/happy/blob/master/LICENSE) para mais informações.
