@@ -1,7 +1,3 @@
-<p align="center">
-  <img alt="happy" title="happy" src="./assets/banner.png" />
-</p>
-
 <h1 align="center">
   Leve felicidade para o mundo
 </h1>
