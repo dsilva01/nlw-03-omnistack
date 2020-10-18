@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useCallback, useState } from 'react'
 import { StyleSheet, Text, View, Dimensions } from 'react-native';
 import MapView, { Marker, Callout, PROVIDER_GOOGLE } from 'react-native-maps';
 import { Feather } from '@expo/vector-icons';
@@ -19,11 +19,13 @@ export default function OrphanagesMap() {
   const [location, setLocation] = useState({latitude:0, longitude:0});
   const [orphanages, setOrphanages] = useState<OrphanageItem[]>([]);
   
-  useFocusEffect(() => {
-    api.get('orphanages').then( response => {
-      setOrphanages(response.data)
-    });
-  });
+  useFocusEffect(
+    useCallback(() => {
+      api.get('orphanages').then(response => {
+        setOrphanages(response.data);
+      });
+    }, [])
+);
   
   useEffect(() => handleLocation() , []);
   
