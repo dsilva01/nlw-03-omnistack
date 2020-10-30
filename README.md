@@ -72,10 +72,10 @@ Para instalar as dependências e executar o projeto, é necessário possuir o [N
 $ cd backend && yarn
 
 # Execute as migrations do TypeORM
-$ yarn typeorm migration:run
+$ yarn typeorm
 
 # Execute a api em Node.js
-$ yarn dev:server
+$ yarn dev
 
 # Instale as dependências do front-end web
 $ cd ../web && yarn
@@ -93,10 +93,10 @@ $ yarn start
 $ cd backend && npm install
 
 # Execute as migrations do TypeORM
-$ npm run typeorm migration:run
+$ npm run typeorm
 
 # Execute a api em Node.js
-$ npm run dev:server
+$ npm run dev
 
 # Instale as dependências do front-end web
 $ cd ../web && npm install
